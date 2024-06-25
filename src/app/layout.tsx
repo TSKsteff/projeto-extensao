@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={"h-screen flex flex-col bg-white"}>
         <Header />
-        <div className="flex-1 bg-white">
-           {children}
-        </div>
+        <div className="flex-1 bg-white">{children}</div>
       </body>
     </html>
   );
