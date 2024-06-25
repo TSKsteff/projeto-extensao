@@ -1,5 +1,9 @@
 import Link from "next/link";
 import music from '@/img/icone.png'
+import face from '@/img/face.jpeg'
+import insta from '@/img/insta.jpeg'
+import youtu from '@/img/youtube.jpeg'
+import ttok from '@/img/tiktok.jpeg'
 export function Header(){
     return(
         <div className="w-full flex justify-center py-3 px-20 border-b border-gray-400">
@@ -23,6 +27,12 @@ export function Header(){
                     <Link href={'/contato'} className="no-underline">
                         Contato
                     </Link>
+                    <div className="flex gap-2 items-center">
+                        <img src={insta.src} height={20} width={15}/>
+                        <img src={face.src} height={20} width={15}/>
+                        <img src={youtu.src} height={20} width={15}/>
+                        <img src={ttok.src} height={20} width={15}/>
+                    </div>
                 </div>
             </div>  
 

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={"h-screen flex flex-col bg-white"}>
         <Header />
         <div className="flex-1 bg-white">{children}</div>
+        <Footer/>
       </body>
     </html>
   );
