@@ -1,12 +1,28 @@
 
 'use client'
 
-const Post = (props:any) => {
+import { useRouter } from "next/navigation"
 
+interface PostProps{
+    id: string
+    url: string
+    texto: string
+    titulo: string
+    className: string
+}
+
+const Post = (props:PostProps) => {
+
+
+    const router = useRouter()
+
+    const url = props.url ?? ''
+   
     return( 
-        <div className={`py-4 px-5 flex flex-col justify-end rounded-md no-repeat h-60 bg-cover bg-[url('https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] ${props.className}`}>
-            <h3 className="text-white font-semibold font-lg line-clamp-1 ">{props.titulo}</h3>
-            <p className="text-white font-sm line-clamp-2">{props.texto}</p>
+        <div onClick={() => router.push(`/blog/${props.id}`)} style={{
+            backgroundImage: `url(${url})`
+        }} className={`flex flex-col justify-end rounded-md bg-no-repeat h-96 w-80  bg-cover ${props.className}`}>
+            <h3 className="text-white font-semibold font-lg line-clamp-1 ml-1 mr-1 bg-black bg-opacity-50 p-2 rounded-lg">{props.titulo}</h3>
         </div>
     )
 }

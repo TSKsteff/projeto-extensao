@@ -22,7 +22,7 @@ const Contato = () => {
 
   return (
     <>
-      <div className="max-w-xl mx-auto mt-5 p-5 rounded-md shadow-md">
+      <div className="max-w-xl mx-auto mt-5 p-5 rounded-md shadow-md  mb-10">
         <h1 className="text-2xl font-bold mb-5 text-center">Entrar em Contato</h1>
         <form  className="flex flex-col">
           <div className="mb-4">
