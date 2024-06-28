@@ -5,7 +5,7 @@ import insta from '@/img/insta.jpeg';
 import youtu from '@/img/youtube.jpeg';
 import ttok from '@/img/tiktok.jpeg';
 
-export function Footer(props) {
+export function Footer(props:any) {
   return (
     <div className="w-full flex justify-center py-3 px-20 border-b  bg-slate-100 border-gray-400">
       <div className="w-full md:w-10/12 flex items-center justify-between">

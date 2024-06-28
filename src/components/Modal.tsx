@@ -14,7 +14,7 @@ interface EventModal {
 }
 
 const EventModal = (props: EventModal) => {
-  const handleSubmit = (event) => {
+  const handleSubmit = (event:any) => {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
