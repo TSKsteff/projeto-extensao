@@ -28,10 +28,10 @@ export function Header(){
                         Contato
                     </Link>
                     <div className="flex gap-2 items-center">
-                        <img src={insta.src} height={20} width={15}/>
-                        <img src={face.src} height={20} width={15}/>
-                        <img src={youtu.src} height={20} width={15}/>
-                        <img src={ttok.src} height={20} width={15}/>
+                    
+                    <Link href={'https://www.instagram.com/aubourgsamuel/'} target="_blank"><img src={insta.src} height={20} width={15}/></Link>
+                    <Link href={'https://www.facebook.com/aubourg.samuel.9'} target="_blank"><img src={face.src} height={20} width={15}/></Link>
+                    <Link href={'https://www.youtube.com/@samuelaubourg6427'} target="_blank"><img src={youtu.src} height={20} width={15}/></Link>
                     </div>
                 </div>
             </div>  

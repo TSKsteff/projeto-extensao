@@ -64,7 +64,7 @@ export default function Home() {
                 titulo="Melhores musica para Ceremonha" id='5' url={eu.src} className={'col-span-5  shadow-lg'}/>
               </div>
               <div>
-                <input type="button" value={"Ver mais"} className='bg-sky-400 p-2 rounded-lg shadow-lg'></input>
+                <a href="/blog"><input type="button" value={"Ver mais"} className='bg-sky-400 p-2 rounded-lg shadow-lg'></input></a>
               </div>
           </div>
         </section>
