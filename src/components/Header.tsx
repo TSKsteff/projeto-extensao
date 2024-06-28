@@ -32,6 +32,7 @@ export function Header(){
                     <Link href={'https://www.instagram.com/aubourgsamuel/'} target="_blank"><img src={insta.src} height={20} width={15}/></Link>
                     <Link href={'https://www.facebook.com/aubourg.samuel.9'} target="_blank"><img src={face.src} height={20} width={15}/></Link>
                     <Link href={'https://www.youtube.com/@samuelaubourg6427'} target="_blank"><img src={youtu.src} height={20} width={15}/></Link>
+                    <Link href={'https://www.tiktok.com/@sam09902?_t=8naLbQB6Ev0&_r=1'} target="_blank"><img src={ttok.src} height={20} width={15}/></Link>
                     </div>
                 </div>
             </div>  
